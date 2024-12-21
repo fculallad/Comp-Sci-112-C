@@ -1,9 +1,9 @@
 # Dynamic Data Struct
 
-Lesson 13
+
+## main.c
 
 ```cpp
-
 #include <stdio.h>
 #include "displayInfo.h"
 #include "array.h"
@@ -46,6 +46,11 @@ int main() {
 }
 
 ```
+
+## array.c
+
+```cpp
+
 #include <stdio.h>
 #include "array.h"
 
@@ -71,35 +76,9 @@ int sumArray(int arr[], int size) {
     return total;
 }
 
-
-```cpp
-
-#include <vector>
-#include <iostream>
-#include <algorithm>
-#include <string>
-
-using namespace std;
-
-string reverseString (string str){
-
-    //Using a Loop
-    string reverse{};
-    
-    for(int i = *str.end(); i >= 0; i--){
-        reverse += str[i];
-    }
-    return reverse;
-
-    //Using std::string()
-    return string(str.rbegin(), str.rend());
-
-    //Using std::reverse()
-    reverse(str.begin(), str.end());
-    return str;
-}
-
 ```
+
+## displayInfo.c
 
 ```cpp
 
@@ -124,8 +103,9 @@ void displayInfo(){
   
 }
 
-
 ```
+
+## memory.c
 
 ```cpp
 
@@ -161,6 +141,8 @@ void demonstrateMemoryManagement() {
 
 ```
 
+## pointers.c
+
 ```cpp
 
 #include <stdio.h>
@@ -193,6 +175,8 @@ void freeDynamicArray(int *arr) {
 
 ```
 
+## structure.c
+
 ```cpp
 
 #include <stdio.h>
@@ -212,7 +196,5 @@ void printStudentInfo(const Student *student) {
     printf("Age: %d\n", student->age);
     printf("GPA: %.2f\n", student->gpa);
 }
-
-
 
 ```
